@@ -65,7 +65,8 @@ class MaterialStyle implements Style {
   LineStyle createGridlineStyle(
       GraphicsFactory graphicsFactory, LineStyleSpec? spec) {
     return graphicsFactory.createLinePaint()
-      ..color = spec?.color ?? MaterialPalette.gray.shade300
+      //..color = spec?.color ?? MaterialPalette.gray.shade300
+      ..color = spec?.color ?? MaterialPalette.gray.shade800
       ..dashPattern = spec?.dashPattern
       ..strokeWidth = spec?.thickness ?? 1;
   }
